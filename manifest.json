@@ -1,8 +1,15 @@
 {
-  "name": "Your Mental Health Guide",
   "short_name": "HealthGuide",
+  "name": "Your Mental Health Guide",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#000000"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
