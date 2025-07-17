@@ -1,8 +1,0 @@
-{
-  "short_name": "HealthGuide",
-  "name": "Your Mental Health Guide",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
