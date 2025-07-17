@@ -28,25 +28,29 @@
         text-align: center;
       }
 
-      video {
-        width: 100%;
-        height: auto;
-        max-width: 800px;
-        margin: 40px auto;
-        display: block;
-      }
-
       h1 {
         font-size: 32px;
         margin-top: 40px;
+      }
+
+      vturb-smartplayer {
+        display: block;
+        margin: 40px auto;
+        width: 100%;
+        max-width: 400px;
       }
     </style>
   </head>
   <body>
     <h1>Your Mental Health Guide</h1>
-    <video controls autoplay muted playsinline>
-      <source src="video.mp4" type="video/mp4" />
-      Seu navegador não suporta vídeo HTML5.
-    </video>
+
+    <!-- VTurb Embed -->
+    <vturb-smartplayer id="vid-6874dd2a02e67d75646cf9a9"></vturb-smartplayer>
+    <script type="text/javascript">
+      var s = document.createElement("script");
+      s.src = "https://scripts.converteai.net/d1bcf2b7-aafc-42de-b8c7-54bd14506eb1/players/6874dd2a02e67d75646cf9a9/v4/player.js";
+      s.async = true;
+      document.head.appendChild(s);
+    </script>
   </body>
 </html>
