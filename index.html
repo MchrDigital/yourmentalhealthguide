@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mind Hero VSL</title>
   <style>
     body {
@@ -43,45 +43,49 @@
   </style>
 </head>
 <body>
-  <!-- AVISO TOPO -->
+  <!-- AVISO -->
   <div class="warning">
     <span>Attention:</span> This presentation will be available only until 17/07/2025
   </div>
 
-  <!-- VÍDEO -->
+  <!-- VÍDEO CONVERTEAI -->
   <div class="video-container">
     <vturb-smartplayer id="vid-6874dd2a02e67d75646cf9a9" style="display: block; margin: 0 auto; width: 100%; max-width: 100%;"></vturb-smartplayer>
   </div>
 
-  <!-- OFERTAS (opcional: ajuste com HTML do checkout real) -->
+  <!-- OFERTAS -->
   <div class="offers">
     <h2>Choose your package</h2>
     <p>Package options and pricing here...</p>
   </div>
 
-  <!-- COMENTÁRIOS (exemplo simples) -->
+  <!-- COMENTÁRIOS -->
   <div class="comments">
     <h3>What people are saying:</h3>
     <p>Facebook-style comments here...</p>
   </div>
 
-  <!-- SCRIPT DO PLAYER (ConverteAi) -->
-  <script type="text/javascript">
-    var s = document.createElement("script");
-    s.src = "https://scripts.converteai.net/d1bcf2b7-aafc-42de-b8c7-54bd14506eb1/players/6874dd2a02e67d75646cf9a9/v4/player.js";
-    s.async = true;
-    document.head.appendChild(s);
+  <!-- SCRIPT DO PLAYER -->
+  <script>
+    const playerScript = document.createElement("script");
+    playerScript.src = "https://scripts.converteai.net/d1bcf2b7-aafc-42de-b8c7-54bd14506eb1/players/6874dd2a02e67d75646cf9a9/v4/player.js";
+    playerScript.async = true;
+    document.head.appendChild(playerScript);
   </script>
 
-  <!-- SCRIPT DO UTMIFY (deve vir por último) -->
-  <script 
-    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-    data-utmify-prevent-xcod-sck
-    data-utmify-prevent-subids
-    data-utmify-ignore-iframe
-    data-utmify-is-cartpanda
-    async
-    defer
-  ></script>
+  <!-- UTMIFY - carregado em bloco isolado -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      const utmScript = document.createElement("script");
+      utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+      utmScript.setAttribute("data-utmify-prevent-xcod-sck", "");
+      utmScript.setAttribute("data-utmify-prevent-subids", "");
+      utmScript.setAttribute("data-utmify-ignore-iframe", "");
+      utmScript.setAttribute("data-utmify-is-cartpanda", "");
+      utmScript.async = true;
+      utmScript.defer = true;
+      document.body.appendChild(utmScript);
+    });
+  </script>
 </body>
 </html>
