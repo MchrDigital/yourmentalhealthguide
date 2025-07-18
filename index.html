@@ -1,85 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.dailyhealthflow.com/mhwhtruealert" />
-    <meta name="description" content="Web site created using create-react-app" />
-    <link rel="manifest" href="manifest.json" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mind Hero VSL</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
 
-    <title>Your Mental Health Guide</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #fff;
-        color: #000;
-      }
+    .warning {
+      background: red;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 18px;
+    }
 
-      .alert-bar {
-        background-color: red;
-        color: white;
-        padding: 10px;
-        text-align: center;
-        font-weight: bold;
-      }
+    .warning span {
+      font-weight: bold;
+      color: yellow;
+    }
 
-      .video-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
+    .video-container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 10px;
+    }
 
-      .offer-section,
-      .comments-section {
-        max-width: 960px;
-        margin: 40px auto;
-        padding: 0 20px;
-      }
-    </style>
-  </head>
-  <body>
+    .offers {
+      text-align: center;
+      margin: 40px auto;
+    }
 
-    <div class="alert-bar">
-      <span style="color: yellow;">Attention:</span> This presentation will be available only until 17/07/2025
-    </div>
+    .comments {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- AVISO TOPO -->
+  <div class="warning">
+    <span>Attention:</span> This presentation will be available only until 17/07/2025
+  </div>
 
-    <div class="video-container">
-      <vturb-smartplayer id="vid-6874dd2a02e67d75646cf9a9" style="display: block; margin: 0 auto; width: 100%; max-width: 700px;"></vturb-smartplayer>
-    </div>
+  <!-- VÍDEO -->
+  <div class="video-container">
+    <vturb-smartplayer id="vid-6874dd2a02e67d75646cf9a9" style="display: block; margin: 0 auto; width: 100%; max-width: 100%;"></vturb-smartplayer>
+  </div>
 
-    <div class="offer-section">
-      <!-- Aqui você insere os blocos de ofertas dos produtos -->
-      <h2>Choose your package</h2>
-      <!-- ... demais ofertas ... -->
-    </div>
+  <!-- OFERTAS (opcional: ajuste com HTML do checkout real) -->
+  <div class="offers">
+    <h2>Choose your package</h2>
+    <p>Package options and pricing here...</p>
+  </div>
 
-    <div class="comments-section">
-      <!-- Aqui você insere os comentários do Facebook ou manuais -->
-      <h2>What people are saying:</h2>
-      <!-- ... comentários ... -->
-    </div>
+  <!-- COMENTÁRIOS (exemplo simples) -->
+  <div class="comments">
+    <h3>What people are saying:</h3>
+    <p>Facebook-style comments here...</p>
+  </div>
 
-    <!-- Script Vturb -->
-    <script type="text/javascript">
-      var s = document.createElement("script");
-      s.src = "https://scripts.converteai.net/d1bcf2b7-aafc-42de-b8c7-54bd14506eb1/players/6874dd2a02e67d75646cf9a9/v4/player.js";
-      s.async = true;
-      document.head.appendChild(s);
-    </script>
+  <!-- SCRIPT DO PLAYER (ConverteAi) -->
+  <script type="text/javascript">
+    var s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/d1bcf2b7-aafc-42de-b8c7-54bd14506eb1/players/6874dd2a02e67d75646cf9a9/v4/player.js";
+    s.async = true;
+    document.head.appendChild(s);
+  </script>
 
-    <!-- UTMify script no final do body -->
-    <script
-      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-      data-utmify-prevent-xcod-sck
-      data-utmify-prevent-subids
-      data-utmify-ignore-iframe
-      data-utmify-is-cartpanda
-      async
-      defer
-    ></script>
-  </body>
+  <!-- SCRIPT DO UTMIFY (deve vir por último) -->
+  <script 
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    data-utmify-ignore-iframe
+    data-utmify-is-cartpanda
+    async
+    defer
+  ></script>
+</body>
 </html>
